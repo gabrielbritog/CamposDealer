@@ -1,0 +1,9 @@
+#clientes table{
+    border: 1px solid black;
+
+}
+
+#clientes table td{
+    border: 1px solid black;
+    padding: 10px;
+}

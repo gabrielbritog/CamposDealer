@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="../js/jquery.validate.js"></script>
+    <script
+      type="text/javascript"
+      src="../js/localization/messages_pt_BR.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#formCadastro').validate({
+          rules: {
+            nome: {
+              required: true,
+              minlength: 2
+            },
+            cidade: {
+              required: true,
+              minlength: 2
+            }
+          }
+        })
+      })
+    </script>
+
+    <style type="text/css">
+      label.error {
+        color: crimson;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center p-3">Clientes</h1>
+    <div class="container-md">
+      <div class="border p-3">
+        <div class="text-center">
+          <label class="h6 text-dark" for="nmCliente">Pesquisar</label>
+          <input
+            type="text"
+            id="nmCliente"
+            placeholder="Digite o nome do cliente"
+          />
+          <button class="btn btn-primary" onclick="getCliente()">Buscar</button>
+          <button class="btn btn-dark" onclick="reloadPage()">Limpar</button>
+        </div>
+        <br />
+        <div class="row border" id="clientes">
+          <table>
+            <tr>
+              <th class="col border">Nome</th>
+              <th class="col border">Cidade</th>
+              <th class="col border">Ações</th>
+            </tr>
+            <tbody id="tableCliente"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="p-3">
+      <div class="text-center">
+        <button
+          class="btn btn-primary"
+          onclick="document.getElementById('telaCadastro').classList.remove('invisible') "
+        >
+          Novo Cliente
+        </button>
+      </div>
+      <br />
+      <fieldset id="telaCadastro" class="col-md-6 offset-md-5">
+        <div>
+          <legend class="h3 text-dark offset-md-1 pb-3">Cadastro</legend>
+
+          <form id="formCadastro">
+            <label class="h6 text-dark" for="nome">Nome</label> &nbsp;<input
+              type="text"
+              name="nome"
+              id="nome"
+              style="margin-left: 33px"
+            />
+            <br />
+
+            <label class="h6 text-dark" for="cidade">Cidade</label>
+            <input
+              type="text"
+              name="cidade"
+              id="cidade"
+              style="margin-left: 33px"
+            /><br />
+            <br />
+            <button
+              class="btn btn-primary col-md-2 offset-md-1"
+              onclick="salvarCliente()"
+            >
+              Salvar
+            </button>
+            <p></p>
+          </form>
+        </div>
+
+        <button
+          class="btn btn-primary col-md-2 offset-md-1"
+          onclick="document.getElementById('telaCadastro').classList.add('invisible')"
+        >
+          Fechar
+        </button>
+      </fieldset>
+    </div>
+    <script src="script/script.js"></script>
+    <script>
+      listarClientes()
+    </script>
+    <button
+      class="btn btn-primary"
+      onclick="document.location.href = '../../index.html'"
+    >
+      Inicio
+    </button>
+  </body>
+</html>
