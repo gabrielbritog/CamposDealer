@@ -27,7 +27,7 @@ Após isso crie um banco de dados através da migration usando o comando abaixo 
 ```bash
   Update-Database
 ```
-A porta da API é 71070
+A porta da API é 7070
 ## Documentação da API
 
 #### Retorna todos os clientes
