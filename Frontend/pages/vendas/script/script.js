@@ -7,11 +7,18 @@ function listaVendas() {
     .then(r => {
       let dados
       dados = r.map(data => {
+        let dataDia = new Date(data.dthVend.toString()).toLocaleDateString(
+          'pt-BR'
+        )
+        let horario = new Date(data.dthVend.toString()).toLocaleTimeString(
+          'pt-BR'
+        )
+        console.log(dataDia)
         let dado = `<tr>
                     <td>${data.clienteId}</td>
                     <td>${data.produtoId}</td>
                     <td>${data.qtdVenda}</td>
-                    <td>${data.dthVend}</td>
+                    <td>${dataDia + ' ' + horario}</td>
                     <td>R$ ${data.vlrUnitarioVenda.toFixed(2)}</td>
                     <td>R$ ${data.vlrTotalVenda.toFixed(2)}</td>
                     <td>

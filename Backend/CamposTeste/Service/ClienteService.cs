@@ -44,6 +44,7 @@ namespace CamposTeste.Service
                 throw new KeyNotFoundException($"Cliente {id} não existe");
             }
 
+
             _context.Clientes.Remove(clienteDb);
             await _context.SaveChangesAsync();
         }
