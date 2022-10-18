@@ -21,7 +21,7 @@ Esse projeto é um desafio relacionado à um processo seletivo onde desenvolvi u
 - Code Time
 - Live Server
 
-## Extensões usados Frontend
+## Extensões usadas Frontend
 
 - Microsoft.EntityFrameworkCore 6.0.10
 - Microsoft.EntityFrameworkCore.SqlServer 6.0.10
