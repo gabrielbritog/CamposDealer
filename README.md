@@ -9,12 +9,24 @@ Esse projeto é um desafio relacionado à um processo seletivo onde desenvolvi u
 - SqlServer
 - Swegger/Insominia
 
-## O que foi utilizado no Frontend?
+## Pacotes usados Backend(Visual Studio 2022)
 
-- Html
-- JavaScript
-- Bootstrap
-- JQuery
+- Microsoft.EntityFrameworkCore 6.0.10
+- Microsoft.EntityFrameworkCore.SqlServer 6.0.10
+- Microsoft.EntityFrameworkCore.Tools 6.0.10
+- Flunt 2.0.5
+
+## O que foi utilizado no Frontend? (Visual Studio Code)
+
+- Code Time
+- Live Server
+
+## Extensões usados Frontend
+
+- Microsoft.EntityFrameworkCore 6.0.10
+- Microsoft.EntityFrameworkCore.SqlServer 6.0.10
+- Microsoft.EntityFrameworkCore.Tools 6.0.10
+- Flunt 2.0.5
 
 ## Como rodar o projeto?
 
