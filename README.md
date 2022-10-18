@@ -7,7 +7,7 @@ Esse projeto é um desafio relacionado à um processo seletivo onde desenvolvi u
 - .Net(C#)
 - Entity Framework
 - SqlServer
-- Swegger/Insominia
+- Swagger/Insominia
 
 ## Pacotes usados Backend(Visual Studio 2022)
 
