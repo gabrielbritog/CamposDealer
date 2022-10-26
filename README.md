@@ -18,15 +18,15 @@ Esse projeto é um desafio relacionado à um processo seletivo onde desenvolvi u
 
 ## O que foi utilizado no Frontend? (Visual Studio Code)
 
-- Code Time
-- Live Server
+- Html
+- JavaScript
+- JQuery
+- BootStrap
 
 ## Extensões usadas Frontend
 
-- Microsoft.EntityFrameworkCore 6.0.10
-- Microsoft.EntityFrameworkCore.SqlServer 6.0.10
-- Microsoft.EntityFrameworkCore.Tools 6.0.10
-- Flunt 2.0.5
+- Code Time
+- Live Server
 
 ## Como rodar o projeto?
 
